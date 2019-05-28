@@ -11,7 +11,11 @@ const userSchema = new Schema({
         required: true,
     },
     sex: {
+<<<<<<< HEAD
         type: String,
+=======
+        type: Number,
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
         required: true,
     },
     email: {
@@ -24,7 +28,11 @@ const userSchema = new Schema({
         required: true,
     },
     mobile: {
+<<<<<<< HEAD
         type: String,
+=======
+        type: Number,
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
         required: true,
     },
     gupload: {

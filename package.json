@@ -1,11 +1,18 @@
 {
+<<<<<<< HEAD
   "name": "hackathon",
   "version": "0.0.0",
+=======
+  "name": "indian",
+  "version": "0.0.0",
+  "main": "app.js",
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
   "private": true,
   "scripts": {
     "start": "nodemon app"
   },
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
@@ -13,14 +20,23 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
+=======
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "mongoose": "^5.5.11",
     "morgan": "^1.9.1",
+<<<<<<< HEAD
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
+=======
+    "session": "^0.1.0"
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
   }
 }
