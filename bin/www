@@ -5,7 +5,11 @@
  */
 
 var app = require('../app');
+<<<<<<< HEAD
+var debug = require('debug')('hackathon:server');
+=======
 var debug = require('debug')('indian:server');
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
 var http = require('http');
 
 /**

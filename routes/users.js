@@ -6,7 +6,15 @@ const { isLoggedIn, isNotLoggedIn } = require('./middlewares');
 
 var router = express.Router();
 
+<<<<<<< HEAD
 router.get('/register', function (req, res, next) {
+=======
+<<<<<<< HEAD
+router.get('/register', function (req, res, next) {
+=======
+router.get('/', function (req, res, next) {
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
   User.find({})
     .then((users) => {
       res.json(users);
@@ -17,18 +25,40 @@ router.get('/register', function (req, res, next) {
     });
 });
 
+<<<<<<< HEAD
 
 router.post("/Register", function(req, res, next) {
   const user = new User({
     name: req.body.name,
     birth: req.body.birth,
+=======
+<<<<<<< HEAD
+
+router.post("/Register", function(req, res, next) {
+  const user = new User({
+    name: req.body.name,
+    birth: req.body.birth,
+=======
+router.post('/', function(req, res, next) {
+  const user = new User({
+    name: req.body.name,
+    birth: req.body.age,
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
     sex: req.body.sex,
     email: req.body.email,
     password: req.body.password,
     gupload: req.body.gupload,
     gbuylist: req.body.gbuylist,
     walletAddress: req.body.walletAddress,
+<<<<<<< HEAD
     mobile: req.body.mobile,
+=======
+<<<<<<< HEAD
+    mobile: req.body.mobile,
+=======
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
     img: req.body.img,
   });
   user.save()
@@ -37,7 +67,15 @@ router.post("/Register", function(req, res, next) {
       res.status(201).json(result);
     })
     .catch((err) => {
+<<<<<<< HEAD
       console.error(err);
+=======
+<<<<<<< HEAD
+      console.error(err);
+=======
+      console.err(err);
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
       next(err);
     });
 });
@@ -45,14 +83,29 @@ router.post("/Register", function(req, res, next) {
 router.patch('/:email', function(req, res, next) {
   User.update({ email: req.params.email }, {
     name: req.params.name,
+<<<<<<< HEAD
     birth: req.body.birth,
+=======
+<<<<<<< HEAD
+    birth: req.body.birth,
+=======
+    birth: req.body.age,
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
     sex: req.body.sex,
     email: req.body.email,
     password: req.body.password,
     gupload: req.body.gupload,
     gbuylist: req.body.gbuylist,
     walletAddress: req.body.walletAddress,
+<<<<<<< HEAD
     mobile: req.body.mobile,
+=======
+<<<<<<< HEAD
+    mobile: req.body.mobile,
+=======
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
     img: req.body.img,
   }).then((result) => {
     res.json(result);
@@ -73,6 +126,7 @@ router.delete('/:email', function (req, res, next) {
     });
 });
 
+<<<<<<< HEAD
 router.get('/Login', function(req, res, next) {
   res.render("/Login");
 });
@@ -128,4 +182,13 @@ router.get('/Logout', function(req, res) {
 });
 
 
+=======
+<<<<<<< HEAD
+router.get('/Login', function(req, res, next) {
+  res.render("")
+})
+
+=======
+>>>>>>> c48eda53ad005d633d9044db3dec7fc6061f34cb
+>>>>>>> 64e6fa1e6fe17873696d16bacd61932ffd09da76
 module.exports = router;
