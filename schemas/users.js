@@ -11,7 +11,7 @@ const userSchema = new Schema({
         required: true,
     },
     sex: {
-        type: Number,
+        type: String,
         required: true,
     },
     email: {
@@ -24,16 +24,14 @@ const userSchema = new Schema({
         required: true,
     },
     mobile: {
-        type: Number,
+        type: String,
         required: true,
     },
     gupload: {
         type: String,
-        require: true,
     },
     gbuylist: {
         type: String,
-        required: true,
     },
     walletAddress: {
         type: String,
